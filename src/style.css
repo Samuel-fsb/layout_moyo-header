@@ -1,3 +1,68 @@
-body {
+body{
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+  background-color: rgb(200, 199, 199);
+}
+
+html{
+  --header-color: #fff;
+  --text-color: #00ACDC;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  background-color: var(--header-color);
+}
+
+.ul{
+  display: flex;
+}
+
+.ul a{
+  text-transform: uppercase;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.li{
+  display: flex;
+  margin: 0 20px 0 0;
+  list-style: none;
+}
+
+.li:last-child{
+  margin: 0;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.is-active{
+  position: relative;
+}
+
+.is-active::after{
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--text-color);
+}
+
+.change-color:hover{
+  color: var(--text-color);
 }
