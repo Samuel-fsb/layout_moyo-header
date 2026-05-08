@@ -10,7 +10,7 @@ html{
   --text-color: #00ACDC;
 }
 
-.header{
+.header-of-site{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,27 +19,26 @@ html{
   background-color: var(--header-color);
 }
 
-.ul{
+.nav__list{
   display: flex;
 }
 
-.ul a{
+.nav__list .nav__link{
   text-transform: uppercase;
-  height: 45px;
   display: flex;
   align-items: center;
   text-decoration: none;
   color: black;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
-.li{
+.nav__item{
   display: flex;
   margin: 0 20px 0 0;
   list-style: none;
 }
 
-.li:last-child{
+.nav__item:last-child{
   margin: 0;
 }
 
@@ -63,6 +62,6 @@ html{
   background-color: var(--text-color);
 }
 
-.change-color:hover{
+.nav__link:hover{
   color: var(--text-color);
 }
