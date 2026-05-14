@@ -23,6 +23,10 @@ html{
   display: flex;
 }
 
+.nav__link{
+  height: 50px;
+}
+
 .nav__list .nav__link{
   text-transform: uppercase;
   display: flex;
