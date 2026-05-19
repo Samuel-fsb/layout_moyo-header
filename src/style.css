@@ -21,14 +21,19 @@ html {
 
 .nav__list {
   display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
   height: 60px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav__list .nav__link {
@@ -43,7 +48,7 @@ html {
 
 .nav__item {
   display: flex;
-  margin: 0 23px 0 0;
+  margin: 0 20px 0 0;
   list-style: none;
 }
 
